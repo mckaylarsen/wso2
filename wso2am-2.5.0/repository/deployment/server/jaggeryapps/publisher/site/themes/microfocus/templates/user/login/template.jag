@@ -1,0 +1,58 @@
+<% jagg.template("user/login", function(inputs, outputs, jagg) { %>
+
+<%      if(request.isSecure()){
+
+            if(jagg.getUser() != null){
+                response.sendRedirect('index.jag');
+            }
+%>
+<div class="page-content-wrapper">
+    <div class="container-fluid signin">
+        <div class="container">
+            <div class="login-form-wrapper">
+                <div class="brand-container">
+                    <img class="brand-image" src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("images/IAS_API_100.png"))%>">
+                    <div class="brand-title"><%=i18n.localize("API Publisher")%></div>
+                </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 login">
+                        <div class="data-container">
+                            <form class="form-horizontal" id="mainLoginForm">
+                                <div class="alert alert-danger" role="alert" id="loginErrorMsg" style="display:none"></div>
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                        <div class="input-group input-wrap">
+                                            <input type="text" class="form-control" id="username" autofocus="autofocus" placeholder="<%=i18n.localize("Username")%>">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                        <div class="input-group input-wrap">
+                                            <input type="password" id="pass" class="form-control" placeholder="<%=i18n.localize("Password")%>" autocomplete="off">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                    	<input type="hidden" id="tenant" value="<%= encode.forHtml(request.getParameter("tenant"))%>" />
+                                        <button type="button" class="btn btn-default btn-primary add-margin-right-2x" onclick="login()"><%=i18n.localize("Sign In")%></button>
+                                        <button type="reset" class="btn btn-default btn-secondary hidden-xs hidden-sm"><%=i18n.localize("Reset")%></button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<% } else {
+        var mod,httpsUrl;
+        mod = jagg.module("manager");
+        httpsUrl= mod.getHTTPsURL();
+
+        response.sendRedirect(jagg.getHttpsUrl("/"));
+} %>
+<%});%>

@@ -1,0 +1,109 @@
+<% jagg.template("menu/primary", function(inputs, outputs, jagg) { 
+  var tenant = jagg.getTenantDomain();
+  var user = jagg.getUser();
+  var reqUrl = request.getRequestURI();
+%>
+
+ <nav class="navigation">
+      <ul class="nav navbar-nav navbar-primary"> 
+            <li class="newItem m1" ><a title="APIs" href="<%= jagg.urlTenanted("/")%>"><span class="left-menu-item "><%=i18n.localize("APIs")%></span></a></li>
+            <li class="newItem m2"><a title="Applications" href="<%= jagg.urlTenanted("/site/pages/applications.jag")%>" class="<%= "link-myapplications" + (user ? "" : " need-login") %>"><span class="left-menu-item"><%=i18n.localize("Applications")%></span></a></li>
+            <% if (outputs.isForumEnabled && (!outputs.tenantDomains || outputs.tenantDomains.indexOf(tenant) == -1 || tenant =="carbon.super")) { %>
+              <li class="newItem m3"><a title="Forum" href="<%= jagg.urlTenanted("/forum")%>"><span class="left-menu-item"><%=i18n.localize("Forum")%></span></a></li>
+            <%} %>
+            <li class="newItem m4"><a title="statistics" href="<%= jagg.urlTenanted("/site/pages/statistics.jag?stat=perAppAPICount")%>" class="<%if(!user){%>need-login<%}%>"><span class="left-menu-item"><%=i18n.localize("Analytics")%> <i class="fw ias-icon-down_thin toggle-icon-up remove-float"></i></span></a>
+              <ul class="sublevel-menu dropdown-menu">
+                    <li><a title="<%=i18n.localize("API Usage")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=perAppAPICount")%>" class="<%if(!user){%>need-login<%}%>"><span class="name"><%=i18n.localize("API Usage")%></span></a></li>
+                    <li><a title="<%=i18n.localize("Top Users")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=topUsers")%>" class="<%if(!user){%>need-login<%}%>"><span class="name"><%=i18n.localize("Top Users")%></span></a></li>
+                    <li><a title="<%=i18n.localize("Resource Usage")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=apiCallType")%>" class="<%if(!user){%>need-login<%}%>"><span class="name"><%=i18n.localize("Resource Usage")%></span></a></li>
+                    <li><a title="<%=i18n.localize("Faulty Invocations")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=faultCount")%>" class="<%if(!user){%>need-login<%}%>"><span class="name"><%=i18n.localize("Faulty Invocations")%></span></a></li>
+                    <li><a title="<%=i18n.localize("Manage Alert Types")%>" href="<%=jagg.urlTenanted("/site/pages/manage-alert-type.jag")%>" class="<%if(!user){%>need-login<%}%>"><span class="name"><%=i18n.localize("Manage Alert Types")%></span></a></li>
+                </ul>
+            </li>
+      </ul>
+  </nav>
+
+<%
+  /*
+%>
+
+<!-- Fixed navbar -->
+<nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+      <span class="sr-only"><%=i18n.localize("Toggle navigation")%></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" title="API Store" href="<%=jagg.urlTenanted("/site/pages/index.jag")%>">API Store</a>
+  </div>
+  <div id="navbar" class="collapse navbar-collapse">
+  <% if(outputs.tenantDomains==null || outputs.tenantDomains.indexOf(tenant) > -1 ){%>  
+    <ul class="nav navbar-nav long-navbar">
+      <% var i, link, links = outputs.links, length = links.length;
+       for(i = 0; i < length; i++) {
+       link = links[i];
+       if(link.title=='Forum' && (outputs.tenantDomains && outputs.tenantDomains.indexOf(tenant) > -1 && tenant !="carbon.super" ) ){ }else{
+       %>
+       <li <%=(link.active ? 'class="active"' : '')%>>
+       <a title="<%=link.tooltip%>" href="<%=link.url%>"<%=(link.classes ? ' class="' + link.classes + '"' : "")%>>
+       <i class="<%=link.classIcon%>"></i>
+       <%=link.title%>
+       </a>
+       </li>
+            <% } }%>      
+      <li class="dropdown">
+        <a title="Statistics" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-line-chart"></i><%=i18n.localize(" Statistics")%><span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a title="<%=i18n.localize("API Usage")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=perAppAPICount")%>" ><%=i18n.localize("API Usage")%></a>
+          </li>
+          <li>
+            <a title="<%=i18n.localize("Top Users")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=topUsers")%>" ><%=i18n.localize("Top Users")%></a>
+          </li>
+          <li>
+            <a title="<%=i18n.localize("Resource Usage")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=apiCallType")%>" ><%=i18n.localize("Resource Usage")%></a>
+          </li>
+          <li>
+            <a title="<%=i18n.localize("Faulty Invocations")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=faultCount")%>" ><%=i18n.localize("Faulty Invocations")%></a>
+          </li>
+        </ul>
+      </li>      
+    </ul>
+    <ul class="nav navbar-nav short-navbar">
+      <% var i, link, links = outputs.links, length = links.length;
+       for(i = 0; i < length; i++) {
+       link = links[i];
+       if(link.title=='Forum' && (outputs.tenantDomains && outputs.tenantDomains.indexOf(tenant) > -1 && tenant !="carbon.super" ) ){ }else{
+       %>
+       <li <%=(link.active ? 'class="active"' : '')%>>
+       <a title="<%=link.tooltip%>" href="<%=link.url%>"<%=(link.classes ? ' class="' + link.classes + '"' : "")%>>
+       <i class="<%=link.classIcon%>"></i>
+       </a>
+       </li>
+            <% } }%>      
+      <li class="dropdown">
+        <a title="statistics" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-line-chart"></i><span class="caret"></span></a>
+        <ul class="dropdown-menu" role="menu">
+          <li>
+            <a title="<%=i18n.localize("API Usage")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=perAppAPICount")%>" ><%=i18n.localize("API Usage")%></a>
+          </li>
+          <li>
+            <a title="<%=i18n.localize("Top Users")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=topUsers")%>" ><%=i18n.localize("Top Users")%></a>
+          </li>
+          <li>
+            <a title="<%=i18n.localize("Resource Usage")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=apiCallType")%>" ><%=i18n.localize("Resource Usage")%></a>
+          </li>
+          <li>
+            <a title="<%=i18n.localize("Faulty Invocations")%>" href="<%=jagg.urlTenanted("/site/pages/statistics.jag?stat=faultCount")%>" ><%=i18n.localize("Faulty Invocations")%></a>
+          </li>
+        </ul>
+      </li>      
+    </ul>        
+  <%}%>         
+  </div><!--/.nav-collapse -->
+</nav>
+
+
+<% */ }); %>
