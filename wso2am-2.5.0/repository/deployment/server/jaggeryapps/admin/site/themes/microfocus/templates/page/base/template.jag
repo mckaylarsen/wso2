@@ -69,34 +69,25 @@ var user = jagg.getUser();
 <!-- header -->
 <header class="header header-default">
 	<div class="container-fluid">
-		<div class="pull-left brand float-remove-xs text-center-xs">
-			<a href="<%=jagg.getMappedUrl("/site/pages/index.jag")%><%=urlPrefix%>"
+		<div class="pull-left brand">
+			<a href="<%=jagg.getMappedUrl("/site/pages/index.jag")%><%=urlPrefix%>" title="<%=i18n.localize("apiAdminHomePage")%>"
 			onclick="jagg.sessionAwareJS({redirect:'<%=jagg.getMappedUrl("/site/pages/index.jag")%><%=urlPrefix%>',e:event})"> <img
-				src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("libs/theme-wso2_1.0/images/logo-inverse.svg"))%>"
-				alt="wso2" title="wso2" class="logo">
+				src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("libs/theme-microfocus/images/IAS_API_100.png"))%>"
+				alt="<%=i18n.localize("WSO2 API Admin Home")%>" title="wso2" class="logo">
 				<h1><%=i18n.localize("Admin Portal")%></h1>
 			</a>
 		</div>
-		<ul class="nav navbar-right float-remove-xs text-center-xs">
-            <li class="visible-inline-block">
-                 <a href="<%=jagg.getAbsoluteUrl("/analytics-alerts")%>")%>" title = "<%=i18n.localize("Alerts")%>">
-                        <span class="icon fw-stack fw-lg">
-                           <i class="fw fw-circle-outline fw-stack-2x"></i>
-                           <i class="fw fw-notification fw-stack-1x"></i>
-                        </span>
 
-                    </a>
-            </li>
+		<ul class="nav navbar-right pull-right">
 			<li class="visible-inline-block">
-				<a href="#" class="dropdown" data-toggle="dropdown"> 
-					<span class="icon fw-stack fw-lg">
-	                   <i class="fw fw-circle-outline fw-stack-2x"></i>
-	                   <i class="fw fw-user fw-stack-1x"></i>
+				<a href="#" class="dropdown" data-toggle="dropdown" title="user">
+					<span class="icon fw-stack m-stack fw-lg">
+	                   <i class="icon-signin-user" title="user"></i>
 	                </span>
 					<span class="hidden-xs">
 							<%if(user!=null){%><%=user.username%>
-							<%}%> <span class="caret"></span>
-					</span> 
+							<%}%> <span class="icon-menu-down"></span>
+					</span>
 				</a>
 				<ul class="dropdown-menu dropdown-menu-right float-remove-xs position-static-xs text-center-xs remove-margin-xs slideInDown" role="menu">
 					<li class="dropdown-header visible-xs">
@@ -104,8 +95,9 @@ var user = jagg.getUser();
 						<%}%> <span class="caret"></span>
 					</li>
 					<li class="divider visible-xs"></li>
-					<li><a
-						href="<%=jagg.getAbsoluteUrl("/site/pages/logout.jag")%><%=urlPrefix%>"><%=i18n.localize("Logout")%></a></li>
+					<li>
+					    <a href="<%=jagg.getAbsoluteUrl("/site/pages/logout.jag")%><%=urlPrefix%>"><%=i18n.localize("Logout")%></a>
+					</li>
 				 </ul>
 			</li>
 			</ul>
@@ -114,11 +106,18 @@ var user = jagg.getUser();
 <!-- End header -->
 <%} %>
 
-
+    <!-- Page Builder -->
     <% jagg.includeBlocks(outputs.header); %>
     <% jagg.includeBlocks(outputs.body); %>
     <% jagg.includeBlocks(outputs.footer); %>
     <% jagg.includeBlock("dialogs", null); %>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="container-fluid">
+            <p>Micro Focus API Manager 1.0.0 | &copy; <a title="Micro Focus" href="http://www.microfocus.com/" target="_blank">Micro Focus</a> <script>document.write(new Date().getFullYear());</script></p>
+        </div>
+    </footer>
     <%
     if(data.footer) {
         jagg.printData(data.footer.js);

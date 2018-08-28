@@ -1,0 +1,6 @@
+[2018-08-24 14:29:28,534]  INFO -  Initiator=wso2.system.user Action=Get-Roles-of-User Target=admin Data={"Filter":"*","Roles":["Internal/subscriber","Internal/creator","Internal/publisher","Internal/everyone","admin"]} Outcome=Success 
+[2018-08-24 14:29:45,019]  INFO -  'admin@carbon.super [-1234]' logged in at [2018-08-24 14:29:45,018-0600] 
+[2018-08-24 14:29:45,125]  INFO -  'admin@carbon.super [-1234]' logged in at [2018-08-24 14:29:45,123-0600] 
+[2018-08-24 14:35:27,060]  INFO -  'admin@carbon.super [-1234]' logged in at [2018-08-24 14:35:27,059-0600] 
+[2018-08-24 14:35:27,087]  INFO -  'admin@carbon.super [-1234]' logged in at [2018-08-24 14:35:27,086-0600] 
+[2018-08-24 14:35:37,016]  INFO -  'admin@carbon.super [-1234]' logged in at [2018-08-24 14:35:37,014-0600] 

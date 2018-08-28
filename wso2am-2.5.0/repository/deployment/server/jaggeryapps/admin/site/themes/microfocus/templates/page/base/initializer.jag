@@ -5,9 +5,10 @@ jagg.initializer("page/base", {
         var jaggi = {
             context: jagg.url("")
         };
-        //jagg.addHeaderCSS("page/base", "bootstrap3", "libs/bootstrap_3.3.5/css/bootstrap.min.css");
-        jagg.addHeaderCSS("page/base", "wso2-theme", "libs/theme-wso2_1.0/css/theme-wso2.css");
+        jagg.addHeaderCSS("page/base", "bootstrap3", "libs/bootstrap_3.3.5/css/bootstrap.min.css");
+        jagg.addHeaderCSS("page/base", "wso2-theme", "libs/theme-microfocus/css/theme-microfocus.css");
 		jagg.addHeaderCSS("page/base", "wso2-fonts", "libs/font-wso2_1.0.2/css/font-wso2.min.css");
+		jagg.addHeaderCSS("page/base", "ias-icons", "libs/ias-icons/css/ias-icons.css");
         jagg.addHeaderCSS("page/base", "customcss", "css/custom.css");
         jagg.addHeaderCSS("page/base", "bootstrap-datatables", "libs/data-tables_1.10.7/extensions/Bootstrap/css/dataTables.bootstrap.css");
         jagg.addHeaderCSS("page/base", "datatables-responsive", "libs/data-tables_1.10.7/extensions/Responsive/css/dataTables.responsive.css");
@@ -25,7 +26,7 @@ jagg.initializer("page/base", {
 
 
         jagg.addFooterJS("page/base", "bootstrap3js", "libs/bootstrap_3.3.5/js/bootstrap.min.js");
-		jagg.addFooterJS("page/base", "wso2js", "libs/theme-wso2_1.0/js/theme-wso2.js");
+		jagg.addFooterJS("page/base", "wso2js", "libs/theme-microfocus/js/theme-wso2.js");
         jagg.addFooterJS("page/base", "jquery-form", "libs/jquery.form.js");
         jagg.addFooterJS("page/base", "cookie", "libs/jquery.cookie.js");
         jagg.addFooterJS("page/base", "jquery-dataTable","libs/data-tables_1.10.7/media/js/jquery.dataTables.min.js");

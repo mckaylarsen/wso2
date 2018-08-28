@@ -16,29 +16,43 @@
     <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf>
-          <file leaf-file-name="jagg.jag" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/jagg/jagg.jag">
+          <file leaf-file-name="login.jag" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/pages/login.jag">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-442">
-                  <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+                <state relative-caret-position="408">
+                  <caret line="24" selection-start-line="24" selection-end-line="24" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="site.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/conf/site.json">
+          <file leaf-file-name="template.jag" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/user/login/template.jag">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="34">
-                  <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+                <state relative-caret-position="289">
+                  <caret line="23" selection-start-line="23" selection-end-line="23" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="custom.css" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/css/custom.css">
+          <file leaf-file-name="initializer.jag" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/layout/login/initializer.jag">
+              <provider selected="true" editor-type-id="text-editor" />
+            </entry>
+          </file>
+          <file leaf-file-name="template.jag" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/page/base/template.jag">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+                <state relative-caret-position="437">
+                  <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="initializer.jag" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/page/base/initializer.jag">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="238">
+                  <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
                 </state>
               </provider>
             </entry>
@@ -47,20 +61,11 @@
       </split-first>
       <split-second>
         <leaf>
-          <file leaf-file-name="site.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/conf/site.json">
+          <file leaf-file-name="template.jag" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/microfocus/templates/user/login/template.jag">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="jagg.jag" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/jagg/jagg.jag">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-833">
-                  <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
+                <state relative-caret-position="238">
+                  <caret line="14" selection-start-line="14" selection-end-line="15" />
                 </state>
               </provider>
             </entry>
@@ -76,7 +81,34 @@
       <find>theme</find>
       <find>script</find>
       <find>context</find>
+      <find>theme-wso2.css</find>
+      <find>theme-wso2_1.0</find>
+      <find>theme-wso2</find>
+      <find>login.jag</find>
+      <find>signin</find>
+      <find>outputs.body</find>
+      <find>outputs</find>
     </findStrings>
+    <dirStrings>
+      <dir>D:\wso2\wso2am-2.5.0\repository\deployment\server\jaggeryapps\publisher\site\themes</dir>
+      <dir>D:\wso2\wso2am-2.5.0\repository\deployment\server\jaggeryapps\admin</dir>
+      <dir>D:\wso2\wso2am-2.5.0\repository\deployment\server\jaggeryapps\publisher</dir>
+    </dirStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/conf/site.json" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/jagg/jagg.jag" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/page/base/initializer.jag" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/microfocus/templates/page/base/initializer.jag" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/themes/microfocus/templates/page/base/initializer.jag" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/pages/login.jag" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/microfocus/templates/page/base/template.jag" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/page/base/template.jag" />
+        <option value="$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/user/login/template.jag" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
@@ -136,7 +168,7 @@
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
@@ -145,17 +177,7 @@
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
-              <item name="jagg" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -165,9 +187,161 @@
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="server" type="462c0819:PsiDirectoryNode" />
               <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
-              <item name="store" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
               <item name="site" type="462c0819:PsiDirectoryNode" />
-              <item name="conf" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
+              <item name="wso2am-2.5.0" type="462c0819:PsiDirectoryNode" />
+              <item name="repository" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="jaggeryapps" type="462c0819:PsiDirectoryNode" />
+              <item name="publisher" type="462c0819:PsiDirectoryNode" />
+              <item name="site" type="462c0819:PsiDirectoryNode" />
+              <item name="themes" type="462c0819:PsiDirectoryNode" />
+              <item name="microfocus" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wso2am-2.5.0" type="b2602c69:ProjectViewProjectNode" />
@@ -202,7 +376,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="header&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/admin/site/pages/header.jag&#10;theme-w&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/libs/theme-wso2_1.0/css/theme-wso2.css" />
+    <property name="SearchEverywhereHistoryKey" value="theme-wso2.css&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/store/site/themes/microfocus/libs/theme-wso2_1.0/css/theme-wso2.css.old&#10;libs/theme-wso2_1.0/css/theme-wso2.css&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/store/site/themes/microfocus/libs/theme-wso2_1.0/css/theme-wso2.css.old&#10;/admin/site/themes/microfocus/libs/theme-wso2_1.0/css/theme-wso2.css&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/subthemes/dark/libs/theme-wso2_1.0/css/theme-wso2.css&#10;theme-wso2&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/libs/theme-microfocus/js/noty-theme-wso2.js&#10;header&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/admin/site/pages/header.jag&#10;theme-w&#9;FILE&#9;file://D:/wso2/wso2am-2.5.0/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/libs/theme-wso2_1.0/css/theme-wso2.css" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.prettier" value="true" />
@@ -234,21 +408,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1535052723284</updated>
-      <workItem from="1535052725065" duration="5225000" />
+      <workItem from="1535052725065" duration="29099000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="5225000" />
+    <option name="totallyTimeSpent" value="29099000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16122234" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20389885" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" weight="0.32897604" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
@@ -290,51 +464,10 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/wso2/libs/theme-wso2_1.0/css/theme-wso2.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/jagg/constants.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/conf/ui-messages.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/theme-upload-task/block.jag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="25" lean-forward="true" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/layout/json-editor/block.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/layout/inline-editor/block.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/layout/extended/block.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/layout/base/block.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/menu/primary/block.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/menu/actions/block.jag">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/page/base/block.jag">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="493">
           <caret line="29" column="19" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/pages/header.jag">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
@@ -348,19 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/js/main.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/js/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/libs/html-css-sanitizer-minified.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -368,13 +488,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-681">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/jaggery.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -405,19 +518,72 @@
         <state relative-caret-position="-1173" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/css/custom.css">
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/wso2/libs/theme-wso2_1.0/js/theme-wso2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="561">
-          <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        <state>
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/conf/locales/jaggery/locale_default.json">
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/themes/microfocus/libs/theme-microfocus/js/noty-theme-wso2.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/microfocus/libs/theme-microfocus/js/noty-theme-wso2.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1279">
-          <caret line="182" column="28" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="28" />
+        <state relative-caret-position="629">
+          <caret line="37" column="70" selection-start-line="37" selection-start-column="70" selection-end-line="37" selection-end-column="70" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/libs/theme-microfocus/js/noty-theme-wso2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="295">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/pages/index.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/subthemes/dark/libs/theme-wso2_1.0/css/theme-wso2.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="38" lean-forward="true" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/themes/microfocus/libs/theme-wso2_1.0/css/theme-wso2.css.old">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="34" lean-forward="true" selection-start-line="14" selection-start-column="34" selection-end-line="14" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/overview/template.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/menu/left/initializer.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/menu/left/template.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2660" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/jagg/jagg.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="145" column="6" selection-start-line="145" selection-start-column="6" selection-end-line="145" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/layout/base/template.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/layout/custom/initializer.jag">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/conf/site.json">
       <provider selected="true" editor-type-id="text-editor">
@@ -426,24 +592,165 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/conf/site.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/jagg/jagg.jag">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-833">
+        <state relative-caret-position="-13129">
           <caret line="56" column="5" selection-start-line="56" selection-start-column="5" selection-end-line="56" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/jagg/jagg.jag">
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/conf/locales/jaggery/locale_default.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-442">
-          <caret line="49" column="4" lean-forward="true" selection-start-line="49" selection-start-column="4" selection-end-line="49" selection-end-column="4" />
+        <state relative-caret-position="221">
+          <caret line="182" column="28" selection-start-line="182" selection-start-column="23" selection-end-line="182" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/layout/base/initializer.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/css/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="33" column="34" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/blocks/layout/base/block.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/js/main.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/js/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/js/left-navigation.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/conf/site.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="24" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/pages/logout.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/layout/login/template.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/page/base/js/jagg.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1275">
+          <folding>
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/jaggery.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2338">
+          <caret line="159" column="6" selection-start-line="159" selection-start-column="6" selection-end-line="159" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/pages/header.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="56" selection-start-line="16" selection-start-column="56" selection-end-line="16" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/layout/login/js/login.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/themes/microfocus/templates/page/base/initializer.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="117" selection-start-line="18" selection-start-column="117" selection-end-line="18" selection-end-column="117" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/microfocus/templates/page/base/template.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="109" column="56" selection-start-line="109" selection-start-column="56" selection-end-line="109" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/themes/microfocus/templates/page/base/template.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="66" column="7" lean-forward="true" selection-start-line="66" selection-start-column="7" selection-end-line="66" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/store/site/blocks/page/base/block.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/pages/login.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/microfocus/templates/page/base/initializer.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="37" selection-start-line="37" selection-end-line="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/pages/login.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/page/base/initializer.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="90" selection-start-line="14" selection-start-column="90" selection-end-line="14" selection-end-column="90" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/page/base/template.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="109" column="35" lean-forward="true" selection-start-line="109" selection-start-column="35" selection-end-line="109" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/layout/login/initializer.jag">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/publisher/site/themes/microfocus/templates/user/login/template.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repository/deployment/server/jaggeryapps/admin/site/themes/microfocus/templates/user/login/template.jag">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
         </state>
       </provider>
     </entry>

@@ -11,27 +11,18 @@
             encode = new encode.Encode();
 %>
 <div class="page-content-wrapper">
-    <div class="container-fluid ">
+    <div class="container-fluid signin">
         <div class="container">
             <div class="login-form-wrapper">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-                        <div class="brand-container add-margin-bottom-5x">
-                            <div class="row">
-                                <div class="col-xs-6 col-sm-3 col-md-9 col-lg-9 center-block float-remove-sm float-remove-xs pull-right-md pull-right-lg">
-                                    <img class="img-responsive brand-spacer" src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("images/logo-white.png"))%>">
-                                </div>
-                            </div>
-                            <h2 class="text-center-sm text-center-xs text-center-md text-right"><%=i18n.localize("Admin Portal")%></h2>
-                        </div>
+                <div class="brand-container">
+                    <img class="brand-image" src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("images/IAS_API_100.png"))%>">
+                    <div class="brand-title"><%=i18n.localize("Admin Portal")%></div>
+                </div>
 
-                    </div>
                     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 login">
                         <div class="data-container">
                             <form class="form-horizontal" action="index.jag" id="loginForm">
-                                <h3><%=i18n.localize("Sign in to your account")%></h3>
-                                <div class="alert alert-danger" role="alert" id="loginError" style="display:none">				                    
-				                </div>
+                                <div class="alert alert-danger" role="alert" id="loginError" style="display:none"></div>
                                 <div class="form-group">
                                     <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
                                         <div class="input-group input-wrap">
