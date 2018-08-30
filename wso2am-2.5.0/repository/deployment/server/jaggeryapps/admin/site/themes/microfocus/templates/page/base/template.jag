@@ -106,7 +106,6 @@ var user = jagg.getUser();
 <!-- End header -->
 <%} %>
 
-    <!-- Page Builder -->
     <% jagg.includeBlocks(outputs.header); %>
     <% jagg.includeBlocks(outputs.body); %>
     <% jagg.includeBlocks(outputs.footer); %>

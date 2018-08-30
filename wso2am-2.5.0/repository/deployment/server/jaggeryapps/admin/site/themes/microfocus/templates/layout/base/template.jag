@@ -1,4 +1,8 @@
-<% jagg.template("layout/base", function(inputs, outputs, jagg) { %>
+<% jagg.template("layout/base", function(inputs, outputs, jagg) {
+if (outputs.left) {
+    outputs.left = false;
+}
+%>
 <%
     var mw = 8;
     if(!outputs.left && !outputs.right) {

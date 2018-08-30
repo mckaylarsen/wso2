@@ -1,0 +1,9 @@
+Manifest-Version: 1.0
+Bundle-SymbolicName: geronimo_jms_1.1_spec_1.1.1.wso2v1
+Export-Package: javax.jms
+Bundle-Name: geronimo_jms_1.1_spec_1.1.1.wso2v1
+Bundle-Version: 1.0.0
+Bundle-ClassPath: .,geronimo-jms_1.1_spec-1.1.1.wso2v1.jar
+Bundle-ManifestVersion: 2
+DynamicImport-Package: *
+
