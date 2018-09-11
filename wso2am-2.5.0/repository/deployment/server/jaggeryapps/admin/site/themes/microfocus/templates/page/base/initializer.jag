@@ -27,6 +27,7 @@ jagg.initializer("page/base", {
 
         jagg.addFooterJS("page/base", "bootstrap3js", "libs/bootstrap_3.3.5/js/bootstrap.min.js");
 		jagg.addFooterJS("page/base", "wso2js", "libs/theme-microfocus/js/theme-wso2.js");
+		jagg.addFooterJS("page/base", "left-nav", "js/left-navigation.js");
         jagg.addFooterJS("page/base", "jquery-form", "libs/jquery.form.js");
         jagg.addFooterJS("page/base", "cookie", "libs/jquery.cookie.js");
         jagg.addFooterJS("page/base", "jquery-dataTable","libs/data-tables_1.10.7/media/js/jquery.dataTables.min.js");

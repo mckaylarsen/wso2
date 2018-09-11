@@ -32,15 +32,15 @@ $(window).load(function(){
 	        url = el.find('a').attr('href');
 
         var newActiveElement = el.attr('class').split(' ')[1];
-        localStorage.setItem('activeMenu', newActiveElement);  
+        localStorage.setItem('activeMenu', newActiveElement);
         $(".navigation ul li").removeClass('active');
         
         
-        if(newActiveElement=='m4') {
-             $(".sublevel-menu").slideDown("fast");
-             $(".glass").show();
-             return;
-        }
+        // if(newActiveElement=='m4') {
+        //      $(".sublevel-menu").slideDown("fast");
+        //      $(".glass").show();
+        //      return;
+        // }
         
         // if($('.sublevel-menu').is(':visible')){
         //     $('.sublevel-menu').slideUp(function(){
@@ -49,16 +49,17 @@ $(window).load(function(){
         //     delay = 700;
         // }
 
-        if(isActiveItem && hasSubMenu){
+        if(hasSubMenu){
             if(el.find('.sublevel-menu').is(':visible')){
                 el.find('.sublevel-menu').slideUp(function(){
                 //     el.find('.left-menu-item i').removeClass('fw-up').addClass('fw-down');
                  });
-            	location.replace(url);
-            }else{
-                el.find('.sublevel-menu').slideDown(function(){
+                location.replace(url);
+            }
+            else{
+                el.find('.sublevel-menu').slideDown("fast");
+                $(".glass").show();
                 //     el.find('.left-menu-item i').removeClass('fw-down').addClass('fw-up');
-                });
             }
             return;
         };
@@ -80,7 +81,7 @@ $(window).load(function(){
            //$(".navigation ul li.navItem active").removeClass('active');
             //el.insertBefore(prev).css('top','0px').addClass('active');
             //el.find('.left-menu-item').removeAttr('style');
-            el.addClass('active');
+            el.addClass("active");
             animating = false;
 
             // if(hasSubMenu){

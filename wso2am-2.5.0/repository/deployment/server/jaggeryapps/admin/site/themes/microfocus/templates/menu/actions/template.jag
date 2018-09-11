@@ -28,8 +28,8 @@
     var globalPolicyEditUrl = "/global-policy-edit";
     var globalPolicyEditMappedUrl = "/global-policy-edit";
 
-    var globalPolicyManageUrl = "/site/pages/global-policy-manage.jag";
-    var globalPolicyManageMappedUrl = "/site/pages/global-policy-manage.jag";
+    var globalPolicyManageUrl = "/global-policy-manage.jag";
+    var globalPolicyManageMappedUrl = "/global-policy-manage.jag";
 
     var apiPolicyListUrl = "/api-policy-list";
     var apiPolicyListMappedUrl = "/api-policy-list";
@@ -44,8 +44,8 @@
     var labelAddMappedUrl = "/label-add";
     %>
 
-
     <!-- navbar -->
+    <% /* %>
 	<div class="navbar-wrapper">
 		<nav class="navbar navbar-default" data-spy="affix"
 			data-offset-top="80" data-offset-bottom="40">
@@ -224,6 +224,7 @@
 
 		</nav>
 	</div>
+	<% */ %>
 
 
 <% }); %>

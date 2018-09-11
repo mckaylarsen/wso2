@@ -66,6 +66,8 @@ var user = jagg.getUser();
 
 
 <% if(user) { %>
+<div id="glass-div" class="glass">&nbsp;</div>
+
 <!-- header -->
 <header class="header header-default">
 	<div class="container-fluid">
@@ -73,7 +75,7 @@ var user = jagg.getUser();
 			<a href="<%=jagg.getMappedUrl("/site/pages/index.jag")%><%=urlPrefix%>" title="<%=i18n.localize("apiAdminHomePage")%>"
 			onclick="jagg.sessionAwareJS({redirect:'<%=jagg.getMappedUrl("/site/pages/index.jag")%><%=urlPrefix%>',e:event})"> <img
 				src="<%=jagg.getAbsoluteUrl(jagg.getThemeFile("libs/theme-microfocus/images/IAS_API_100.png"))%>"
-				alt="<%=i18n.localize("WSO2 API Admin Home")%>" title="wso2" class="logo">
+				alt="<%=i18n.localize("API Admin Home")%>" title="API Admin" class="logo">
 				<h1><%=i18n.localize("Admin Portal")%></h1>
 			</a>
 		</div>

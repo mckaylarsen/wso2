@@ -5,7 +5,7 @@
     }
 
     .navbar-nav {
-        float: left;
+        float: none;
         margin: 0;
     }
 }

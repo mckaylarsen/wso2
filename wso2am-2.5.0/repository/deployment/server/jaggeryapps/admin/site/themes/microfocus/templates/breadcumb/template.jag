@@ -56,51 +56,51 @@
                 var appPolicyManageUrl = jagg.getAbsoluteUrl("/app-policy-manage");
                 var appPolicyManageMappedUrl = jagg.getMappedUrl("/app-policy-manage");
 
-                var globalPolicyManageUrl = jagg.getAbsoluteUrl("/site/pages/global-policy-manage");
-                var globalPolicyManageMappedUrl = jagg.getMappedUrl("/site/pages/global-policy-manage");
+                var globalPolicyManageUrl = jagg.getAbsoluteUrl("/global-policy-manage");
+                var globalPolicyManageMappedUrl = jagg.getMappedUrl("/global-policy-manage");
 
                 var conditionsManageUrl = jagg.getAbsoluteUrl("/site/pages/conditions-manage");
                 var conditionsManageMappedUrl = jagg.getMappedUrl("/site/pages/conditions-manage");
             %>
 
+    <nav class="navigation">
+        <ul class="nav navbar-nav navbar-primary">
+            <li class="newItem m1"><a title="Tasks" href="<%= jagg.urlTenanted("/")%>"><span class="left-menu-item "><%=i18n.localize("Tasks")%></span> <span class=icon-menu-down></span></a>
+                <ul class="sublevel-menu dropdown-menu">
+                    <li><a href="<%=listMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("User Creation")%></a></li>
+                    <li><a href="<%=listMappedUrl%>?tasks=subscription" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("Subscriptions Creation")%></a></li>
+                    <li><a href="<%=listMappedUrl%>?tasks=application" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("Application Creation")%></a></li>
+                    <li><a href="<%=listMappedUrl%>?tasks=appRegistration" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("Application Registration")%></a></li>
+                    <li><a href="#">API State Change</a></li>
+                </ul>
+            </li>
 
-<nav class="navigation">
-    <ul class="nav navbar-nav navbar-primary">
-        <li class="newItem m4"><a title="Tasks" href="<%= jagg.urlTenanted("/")%>"><span class="left-menu-item "><%=i18n.localize("Tasks")%></span> <span class=icon-menu-down></span></a>
-            <ul class="sublevel-menu dropdown-menu">
-                <li><a href="<%=listMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("User Creation")%></a></li>
-                <li><a href="<%=listMappedUrl%>?tasks=subscription" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("Subscriptions Creation")%></a></li>
-                <li><a href="<%=listMappedUrl%>?tasks=application" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("Application Creation")%></a></li>
-                <li><a href="<%=listMappedUrl%>?tasks=appRegistration" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("Application Registration")%></a></li>
-                <li><a href="#">API State Change</a></li>
-            </ul>
-        </li>
+            <li class="newItem m2"><a title="Gateways">MicroGateway <span class=icon-menu-down></span></a>
+                <ul class="sublevel-menu dropdown-menu">
+                    <li><a href="#">Labels</a></li>
+                </ul>
+            </li>
+            <li class="newItem m3"><a href="#" title="Throttling Policies">Throttling Policies <span class=icon-menu-down></span></a>
+                <ul class="sublevel-menu dropdown-menu">
+                    <li><a href="<%=appPolicyManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=appPolicyManageMappedUrl%>',e:event})"><%=i18n.localize("Application Tiers")%></a></li>
+                    <li><a href="<%=apiPolicyListMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=apiPolicyListMappedUrl%>',e:event})"><%=i18n.localize("Advanced Throttling")%></a></li>
+                    <li><a href="<%=subscriptionPolicyManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=subscriptionPolicyManageMappedUrl%>',e:event})"><%=i18n.localize("Subscription Tiers")%></a></li>
+                    <li><a href="<%=globalPolicyManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=globalPolicyManageMappedUrl%>',e:event})">Custom Rules</a></li>
+                    <li><a href="#">Black List</a></li>
+                    <!-- href="<%=conditionsManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=conditionsManageMappedUrl%>',e:event})"><%=i18n.localize("Black List")%> -->
+                </ul>
+            </li>
+            <li class="newItem m4"><a href="#" title="Statistics">Analytics <span class=icon-menu-down></span></a>
+                <ul class="sublevel-menu dropdown-menu">
+                    <li><a href="<%=analyticsApiAvailabilityMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=alertsDomainManageMappedUrl%>',e:event})"><%=i18n.localize("Analytics")%></a></li>
+                </ul>
+            </li>
+            <li class="newItem m5"><a href="#" title="Settings"><%=i18n.localize("Settings")%></a></li>
+        </ul>
+    </nav>
 
-        <li><a title="Gateways">MicroGateway <span class=icon-menu-down></span></a>
-            <ul class="sublevel-menu dropdown-menu">
-                <li><a href="#">Labels</a></li>
-            </ul>
-        </li>
-        <li><a href="#" title="Throttling Policies">Throttling Policies <span class=icon-menu-down></span></a>
-            <ul class="sublevel-menu dropdown-menu">
-                <li><a href="<%=appPolicyManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=appPolicyManageMappedUrl%>',e:event})"><%=i18n.localize("Application Tiers")%></a></li>
-                <li><a href="<%=apiPolicyListMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=apiPolicyListMappedUrl%>',e:event})"><%=i18n.localize("Advanced Throttling")%></a></li>
-                <li><a href="<%=subscriptionPolicyManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=subscriptionPolicyManageMappedUrl%>',e:event})"><%=i18n.localize("Subscription Tiers")%></a></li>
-                <li><a href="#">Custom Rules</a></li>
-                <!-- href="<%=globalPolicyManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=globalPolicyManageMappedUrl%>',e:event})"><%=i18n.localize("Custom Rules")%> -->
-                <li><a href="#">Black List</a></li>
-                <!-- href="<%=conditionsManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=conditionsManageMappedUrl%>',e:event})"><%=i18n.localize("Black List")%> -->
-            </ul>
-        </li>
-        <li><a href="#" title="Statistics">Analytics <span class=icon-menu-down></span></a>
-            <ul class="sublevel-menu dropdown-menu">
-                <li><a href="<%=analyticsApiAvailabilityMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=alertsDomainManageMappedUrl%>',e:event})"><%=i18n.localize("Analytics")%></a></li>
-            </ul>
-        </li>
-        <li><a href="#" title="Settings"><%=i18n.localize("Settings")%></a></li>
-    </ul>
-</nav>
 
+<% /* %>
 <!-- breadcrumb -->
     <div class="breadcrumb-wrapper">
         <ol class="breadcrumb">
@@ -266,6 +266,7 @@
 		      <% } %>
         </ol>
     </div>
+<% */ %>
 
 <% }); %>
 

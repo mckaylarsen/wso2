@@ -30,7 +30,8 @@ if (blackListedTenantDomains_forTutorial.indexOf(tenantDomain)>0) {
 }
 
 %>
-<div id="glass-div" class="glass">&nbsp;</div>
+
+<div id="glass-div" class="glass" style="display: block">&nbsp;</div>
 
 <!-- header -->
 <header class="header header-default">
@@ -260,7 +261,7 @@ if (blackListedTenantDomains_forTutorial.indexOf(tenantDomain)>0) {
 
 	</div>
 <% */%>
-<!--  -->
+
     </div>
 </header>
 <% }); %>

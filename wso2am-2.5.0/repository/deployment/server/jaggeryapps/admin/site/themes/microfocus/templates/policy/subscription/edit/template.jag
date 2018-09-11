@@ -231,10 +231,6 @@
                         	<div class="col-sm-3">
                             <button id="add-attribute-btn" name="add-attribute-btn" type="button" class="btn"
                                 value="<%=i18n.localize('Custom Attributes')%>" >
-                                <span class="icon fw-stack">
-	                                    <i class="fw fw-add fw-stack-1x"></i>
-	                                    <i class="fw fw-circle-outline fw-stack-2x"></i>
-	                 			</span>
                                     <%=i18n.localize("Add Custom Attribute")%>
                             </button>
                             </div>
@@ -283,17 +279,9 @@
                         
                         <div class="form-group">
 						        <button type="button" id="add-tier-btn" onclick="addSubscriptionPolicy()" name="save-tier-btn" class="btn btn-primary has-spinner">
-						            <span class="icon fw-stack">
-						                <i class="fw fw-save fw-stack-1x"></i>
-						                <i class="fw fw-circle-outline fw-stack-2x"></i>
-						            </span>
 						            <%=i18n.localize("Save")%>
 						        </button>
 						        <button type="button" id="cancel-tier-btn" class="btn btn-secondary">
-						            <span class="icon fw-stack">
-						                <i class="fw fw-cancel fw-stack-1x"></i>
-						                <i class="fw fw-circle-outline fw-stack-2x"></i>
-						            </span>
 						            <%=i18n.localize("Cancel")%>
 						        </button>
 						    </div>

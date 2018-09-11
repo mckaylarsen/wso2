@@ -21,7 +21,7 @@ if (outputs.left) {
     } %>
     
     <% if(outputs.left) { %>        
-            <% jagg.includeBlocks(outputs.left); %>
+            <% //jagg.includeBlocks(outputs.left); %>
             <% jagg.includeBlocks(outputs.right); %>
         <% } %>
 
