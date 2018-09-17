@@ -1,5 +1,6 @@
 {
   "theme": {
+//    "base": "wso2.old"
     "base": "microfocus"
   },
   "context": "/admin",
