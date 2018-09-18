@@ -27,7 +27,7 @@ body > .page-content-wrapper > .container, body > .page-content-wrapper > .conta
 }
 
 .page-content-wrapper {
-    padding-left: 55px;
+    /*padding: 25px;*/
 }
 
 .dashboard .page-content-wrapper {
@@ -390,7 +390,7 @@ html:not('.ie') .page-content-wrapper.fixed .sidebar-wrapper.sidebar-options {
 
 @media only screen and (min-width: 768px){
     body > .page-content-wrapper > .container, body > .page-content-wrapper > .container-fluid {
-        padding: 0;
+        padding: 25px;
     }
     .page-content-wrapper.fixed {
         min-height: calc(100% - 130px);
