@@ -7,6 +7,55 @@ var i18n = require("i18n");
 var localeResourcesBasePath="/site/conf/locales/jaggery/";
 i18n.init(request,localeResourcesBasePath);
 
+(function () {
+    var user = jagg.getUser();
+    if (!user && site.ssoConfiguration.enabled == "true" && site.ssoConfiguration.idpInit == "true") {
+        //There is already a redirection applied to idpInitSSOURL (in site.conf) from sso/fiter.
+        //So we should not do another redirection; just return from this.
+        return;
+    }
+    if (!user) {
+        response.sendRedirect(getRedirectPathForNonAuthenticatedUser());
+        return;
+    }
+
+    jagg.render({
+        "name":"page/base",
+        "inputs":{
+            "title":"App Level Policy Management",
+            "header":{
+                "name":"menu/primary"
+            },
+            "body":[
+                {
+                    "name":"layout/extended",
+                    "inputs":{
+                        "middle":{
+                            "name":"policy/app/manage"
+                        }
+                    }
+                }
+            ],"footer":[
+                {
+                    "name":"footer"
+                }
+            ]
+        }
+    });
+}());
+
+%>
+
+
+<% /*
+include("/jagg/jagg.jag");
+include("header.jag");
+var site = require("/site/conf/site.json");
+
+var i18n = require("i18n");
+var localeResourcesBasePath="/site/conf/locales/jaggery/";
+i18n.init(request,localeResourcesBasePath);
+
 var middlePage="signup-task";
 
 var pageName=request.getParameter("task");
@@ -24,7 +73,7 @@ if(pageName == "subscription") {
 } else if(pageName == "analytics") {
    middlePage = "analytics-task";
 } else if(pageName == "apistate"){
-   middlePage="apistate-task";   
+   middlePage="apistate-task";
 }
 
 
@@ -32,7 +81,7 @@ if(pageName == "subscription") {
     var user = jagg.getUser();
     if (!user && site.ssoConfiguration.enabled == "true" && site.ssoConfiguration.idpInit == "true") {
         //There is already a redirection applied to idpInitSSOURL (in site.conf) from sso/fiter.
-        //So we should not do another redirection; just return from this.  
+        //So we should not do another redirection; just return from this.
         return;
     }
 
@@ -67,4 +116,6 @@ if(pageName == "subscription") {
 }());
 
 
-%>
+*/ %>
+
+

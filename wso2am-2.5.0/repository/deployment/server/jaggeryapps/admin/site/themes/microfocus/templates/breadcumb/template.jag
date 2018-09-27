@@ -68,6 +68,7 @@
 
     <nav class="navigation">
         <ul class="nav navbar-nav navbar-primary">
+        <% /* %>
             <li class="newItem m1"><a title="Tasks" href="<%= jagg.urlTenanted("/")%>"><span class="left-menu-item "><%=i18n.localize("Tasks")%></span> <span class=icon-menu-down></span></a>
                 <ul class="sublevel-menu dropdown-menu">
                     <li><a href="<%=listMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=listMappedUrl%>',e:event})"><%=i18n.localize("User Creation")%></a></li>
@@ -83,6 +84,8 @@
                     <li><a href="<%=microgatewayListMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=microgatewayListMappedUrl%>',e:event})">Labels</a></li></li>
                 </ul>
             </li>
+        <% */ %>
+
             <li class="newItem m3"><a href="#" title="Throttling Policies">Throttling Policies <span class=icon-menu-down></span></a>
                 <ul class="sublevel-menu dropdown-menu">
                     <li><a href="<%=appPolicyManageMappedUrl%>" onclick="jagg.sessionAwareJS({redirect:'<%=appPolicyManageMappedUrl%>',e:event})"><%=i18n.localize("Application Tiers")%></a></li>
